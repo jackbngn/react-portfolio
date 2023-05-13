@@ -8,9 +8,10 @@ import Resume from './pages/Resume';
 export default function PortfolioContainer() {
 	const [currentPage, setCurrentPage] = useState('About');
 
+	// Check what is the currentPage and render that component
 	const renderPage = () => {
 		if (currentPage === 'About') {
-			return <About />;
+			return <About handlePage={handlePage} />;
 		}
 		if (currentPage === 'Portfolio') {
 			return <Portfolio />;
@@ -23,6 +24,7 @@ export default function PortfolioContainer() {
 		}
 	};
 
+	// Function to set the current page
 	const handlePage = (page) => setCurrentPage(page);
 
 	return (
