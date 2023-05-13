@@ -20,11 +20,11 @@ export default function About({ handlePage }) {
 				</div>
 			</div>
 
-			<div className="flex justify-center mt-10">
+			<div className="flex justify-center mt-2">
 				<hr className="w-96 border-2 border-gray-400" />
 			</div>
 
-			<div className="mt-20">
+			<div className="mt-20 p-10">
 				<div className="flex justify-center text-3xl text-pink-color">
 					<h4>About me</h4>
 				</div>
@@ -34,7 +34,7 @@ export default function About({ handlePage }) {
 				</div>
 			</div>
 
-			<div>
+			<div className="p-10">
 				<div className="flex justify-center">
 					<a
 						href="https://www.linkedin.com/in/jack-nguyen-909759266/"

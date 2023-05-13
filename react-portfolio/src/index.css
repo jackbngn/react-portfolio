@@ -11,14 +11,10 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	background-color: #1d3557;
 	color: white;
+	height: 100vh;
 }
 
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 		monospace;
-}
-@keyframes typing {
-	from {
-		width: 0;
-	}
 }

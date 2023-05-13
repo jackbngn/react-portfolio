@@ -4,6 +4,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
+import Footer from './Footer';
 
 export default function PortfolioContainer() {
 	const [currentPage, setCurrentPage] = useState('About');
@@ -28,9 +29,10 @@ export default function PortfolioContainer() {
 	const handlePage = (page) => setCurrentPage(page);
 
 	return (
-		<div>
+		<div className="min-h-screen flex flex-col">
 			<NavTabs currentPage={currentPage} handlePage={handlePage} />
-			{renderPage()}
+			<div className="flex-grow">{renderPage()}</div>
+			<Footer />
 		</div>
 	);
 }

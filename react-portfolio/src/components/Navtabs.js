@@ -2,7 +2,7 @@ import React from 'react';
 
 function NavTabs({ currentPage, handlePage }) {
 	return (
-		<nav className="flex items-center justify-between bg-gray-800 ">
+		<nav className="flex items-center justify-between bg-gray-800 sticky top-0 z-10 ">
 			<p className="text-3xl m-8 text-pink-color font-bold">Jack Nguyen</p>
 
 			<ul className="flex justify-end m-10 text-3xl space-x-12">
