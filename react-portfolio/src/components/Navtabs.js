@@ -21,14 +21,14 @@ function NavTabs({ currentPage, handlePage }) {
 				</li>
 				<li className="">
 					<a
-						href="#portfolio"
-						onClick={() => handlePage('Portfolio')}
+						href="#project"
+						onClick={() => handlePage('Project')}
 						className={
-							currentPage === 'Portfolio'
+							currentPage === 'Project'
 								? 'text-pink-color font-bold border-b-4 border-white'
 								: ''
 						}>
-						Portfolio
+						Project
 					</a>
 				</li>
 				<li className="">
