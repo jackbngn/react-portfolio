@@ -5,17 +5,17 @@ export default function About({ handlePage }) {
 	return (
 		<div className="font-bold justify-center">
 			<div className="p-10">
-				<div className="text-center text-pink-color text-4xl mt-10 mb-4 animate__animated animate__backInLeft">
+				<div className="text-center text-pink-color text-4xl mt-10 mb-4 animate__animated animate__backInLeft  ">
 					<p>Hi, my name is Jack Bao Nguyen.</p>
 				</div>
-				<div className="text-center text-4xl animate__animated animate__backInRight">
-					<p className=" mt-2">I am learning to become a software developer.</p>
+				<div className="text-center text-4xl animate__animated animate__backInRight ">
+					<p className="mt-2">I am learning to become a software developer.</p>
 				</div>
-				<div className="flex justify-center m-20">
+				<div className="flex justify-center m-20 animate__animated animate__rollIn animate__delay-1s">
 					<img
 						src={images}
 						alt="Profile"
-						className="w-80 h-80 overflow-hidden rounded-full "
+						className="w-80 h-80 overflow-hidden rounded-full"
 					/>
 				</div>
 			</div>
