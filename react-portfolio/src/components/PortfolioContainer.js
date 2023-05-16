@@ -5,6 +5,7 @@ import Contact from './pages/Contact';
 import Project from './pages/Project';
 import Resume from './pages/Resume';
 import Footer from './Footer';
+import BurgerMenu from './BurgerMenu';
 
 export default function PortfolioContainer() {
 	const [currentPage, setCurrentPage] = useState('About');
@@ -14,7 +15,7 @@ export default function PortfolioContainer() {
 		if (currentPage === 'About') {
 			return <About handlePage={handlePage} />;
 		}
-		if (currentPage === 'Project') {
+		if (currentPage === 'Projects') {
 			return <Project />;
 		}
 		if (currentPage === 'Resume') {

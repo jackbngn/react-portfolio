@@ -1,63 +1,56 @@
 import React from 'react';
 
-function NavTabs({ currentPage, handlePage }) {
+export default function NavTabs({ currentPage, handlePage }) {
 	return (
-		<nav className="flex items-center justify-between bg-gray-800 sticky top-0 z-10 ">
+		<nav className="flex flex-wrap items-center justify-between bg-gray-800 sticky top-0 z-10">
 			<p className="text-3xl m-8 text-pink-color font-bold">Jack Nguyen</p>
 
-			<ul className="flex justify-end m-10 text-3xl space-x-12">
-				<li className="">
-					<a
-						href="#about"
+			<ul className="flex flex-wrap justify-end m-10 text-3xl space-x-12">
+				<li className="mb-4 sm:mb-0">
+					<button
 						onClick={() => handlePage('About')}
-						// ternary operator to add indications css to which tab the user is currently on.
-						className={
+						className={`${
 							currentPage === 'About'
 								? 'text-pink-color font-bold border-b-4 border-white'
 								: ''
-						}>
+						}`}>
 						About Me
-					</a>
+					</button>
 				</li>
-				<li className="">
-					<a
-						href="#project"
-						onClick={() => handlePage('Project')}
-						className={
-							currentPage === 'Project'
+				<li className="mb-4 sm:mb-0">
+					<button
+						onClick={() => handlePage('Projects')}
+						className={`${
+							currentPage === 'Projects'
 								? 'text-pink-color font-bold border-b-4 border-white'
 								: ''
-						}>
-						Project
-					</a>
+						}`}>
+						Projects
+					</button>
 				</li>
-				<li className="">
-					<a
-						href="#resume"
+				<li className="mb-4 sm:mb-0">
+					<button
 						onClick={() => handlePage('Resume')}
-						className={
+						className={`${
 							currentPage === 'Resume'
 								? 'text-pink-color font-bold border-b-4 border-white'
 								: ''
-						}>
+						}`}>
 						Resume
-					</a>
+					</button>
 				</li>
-				<li className="">
-					<a
-						href="#contact"
+				<li className="mb-4 sm:mb-0">
+					<button
 						onClick={() => handlePage('Contact')}
-						className={
+						className={`${
 							currentPage === 'Contact'
 								? 'text-pink-color font-bold border-b-4 border-white'
 								: ''
-						}>
+						}`}>
 						Contact
-					</a>
+					</button>
 				</li>
 			</ul>
 		</nav>
 	);
 }
-
-export default NavTabs;

@@ -24,6 +24,7 @@ export default function Projects() {
 			link: 'https://jackbngn.github.io/Weather-Dashboard/',
 			githubLink: 'https://github.com/jackbngn/Weather-Dashboard',
 		},
+		// Add more projects as needed
 	];
 
 	const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -33,7 +34,7 @@ export default function Projects() {
 			<h1 className="text-pink-color text-5xl font-bold text-center mt-4">
 				Projects
 			</h1>
-			<div className="grid grid-cols-3 gap-4">
+			<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
 				{projects.map((project, index) => (
 					<div
 						key={index}
