@@ -5,7 +5,6 @@ import Contact from './pages/Contact';
 import Project from './pages/Project';
 import Resume from './pages/Resume';
 import Footer from './Footer';
-import BurgerMenu from './BurgerMenu';
 
 export default function PortfolioContainer() {
 	const [currentPage, setCurrentPage] = useState('About');
@@ -32,6 +31,7 @@ export default function PortfolioContainer() {
 	return (
 		<div className="min-h-screen flex flex-col">
 			<NavTabs currentPage={currentPage} handlePage={handlePage} />
+			<div className="md:hidden"></div>
 			<div className="flex-grow">{renderPage()}</div>
 			<Footer />
 		</div>
