@@ -9,7 +9,7 @@ import Footer from './Footer';
 export default function PortfolioContainer() {
 	const [currentPage, setCurrentPage] = useState('About');
 
-	// Check what is the currentPage and render that component
+	// Check what is the currentPage then render that component
 	const renderPage = () => {
 		if (currentPage === 'About') {
 			return <About handlePage={handlePage} />;
