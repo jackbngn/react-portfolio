@@ -18,7 +18,11 @@ function Resume() {
 
 			<h1 className="text-3xl font-bold mb-4">Jack Bao Nguyen</h1>
 			<p className="mb-4">
-				714-657-4915 | jackngn83@gmail.com |{' '}
+				714-657-4915 |{' '}
+				<a href="mailto:jackngn83@gmail.com" className="text-blue-500">
+					jackngn83@gmail.com
+				</a>{' '}
+				|{' '}
 				<a
 					href="https://www.linkedin.com/in/jack-nguyen-909759266/"
 					className="text-blue-500">
@@ -41,13 +45,17 @@ function Resume() {
 			<ul className="list-disc ml-6 mb-4">
 				<li>Programming Languages: HTML, CSS, JavaScript</li>
 				<li>Web Development Frameworks: Tailwind CSS, Bootstrap, Bulma</li>
+				<li>
+					Experience with React.js for building interactive user interfaces.
+				</li>
 				<li>Responsive Web Design</li>
 				<li>Frontend Testing and Debugging</li>
 			</ul>
 
 			<h3 className="font-bold mb-1">Backend Development:</h3>
 			<ul className="list-disc ml-6 mb-4">
-				<li>Programming Languages: Node.js, Express.js</li>
+				<li>Programming Languages: Node.js</li>
+				<li>Web Development Frameworks: Express.js</li>
 				<li>Database Technologies: NoSQL, MongoDB</li>
 				<li>API Development and Integration</li>
 				<li>Server-Side Programming</li>
@@ -76,16 +84,42 @@ function Resume() {
 			<h2 className="text-xl font-bold mb-2">Projects:</h2>
 			<ul className="list-disc ml-6 mb-4">
 				<li>
-					Project 1: [Briefly describe the project, frontend and backend
-					technologies used, and outcomes achieved]
+					<a
+						href="https://the-tech-post.herokuapp.com"
+						className="text-blue-500">
+						The Tech Blog
+					</a>{' '}
+					: This application is a blog site where developers can publish their
+					blog posts and comment on other developers’ posts as well. The app is
+					built using Node.js and follows the MVC paradigm in its architectural
+					structure, using Handlebars.js as the templating language, Sequelize
+					as the ORM, and the express-session npm package for authentication.
 				</li>
 				<li>
-					Project 2: [Briefly describe the project, frontend and backend
-					technologies used, and outcomes achieved]
+					<a
+						href="https://the-just-another-text-editor.herokuapp.com/"
+						className="text-blue-500">
+						J.A.T.E
+					</a>
+					{''} : The text editor PWA is a single-page application that fulfills
+					the criteria of a Progressive Web Application. It provides an
+					intuitive and user-friendly interface for creating, editing, and
+					saving text documents. The application leverages data persistence
+					techniques to ensure redundancy in case certain options are not
+					supported by the browser. Furthermore, the text editor is designed to
+					function offline, allowing users to continue using the application
+					offline.
 				</li>
 				<li>
-					Project 3: [Briefly describe the project, frontend and backend
-					technologies used, and outcomes achieved]
+					<a
+						href="https://jackbngn.github.io/Weather-Dashboard/"
+						className="text-blue-500">
+						Weather Dashboard
+					</a>{' '}
+					: The "Weather Dashboard" is a web application built using modern web
+					technologies and APIs. It leverages HTML, CSS, and JavaScript for the
+					front-end development, along with additional libraries and APIs for
+					fetching and displaying weather data.
 				</li>
 			</ul>
 
@@ -93,18 +127,9 @@ function Resume() {
 			<ul className="list-disc ml-6 mb-4">
 				<li>
 					GitHub:{' '}
-					<a href="[GitHub profile URL]" className="text-blue-500">
+					<a href="https//github.com/jackbngn/" className="text-blue-500">
 						[GitHub profile URL]
 					</a>
-				</li>
-				<li>
-					Personal Website/Blog:{' '}
-					<a href="[URL]" className="text-blue-500">
-						[URL]
-					</a>
-				</li>
-				<li>
-					Awards and Recognitions: [List any relevant awards or recognitions]
 				</li>
 			</ul>
 		</div>

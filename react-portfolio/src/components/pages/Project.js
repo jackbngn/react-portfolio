@@ -19,7 +19,7 @@ export default function Projects() {
 			githubLink: 'https://github.com/jackbngn/J.A.T.E',
 		},
 		{
-			name: 'Weather DashBoard',
+			name: 'Weather Dashboard',
 			image: WeatherDashboard,
 			link: 'https://jackbngn.github.io/Weather-Dashboard/',
 			githubLink: 'https://github.com/jackbngn/Weather-Dashboard',
