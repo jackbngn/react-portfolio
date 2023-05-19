@@ -39,15 +39,15 @@ export default function Contact() {
 	};
 
 	return (
-		<div className="flex justify-center mt-12 ">
-			<form className="bg-gray-800 p-2">
+		<div className="flex justify-center lg:mt-20 md:mt-20 sm:mt-20 xsm:mt-10">
+			<form className="bg-gray-800 p-12 pb-8 rounded-2xl">
 				<h1 className="text-white text-3xl font-bold flex justify-center mb-8">
 					Contact Me!
 				</h1>
 
-				<div className="mr-8 ml-8 flex">
+				<div className="flex flex-col items-center mt-10 sm:flex-row ">
 					<input
-						className="h-8 w-64 mr-10 p-2"
+						className="  lg:mr-10 md:mr-10 sm:mr-10 lg:mb-0 md:mb-0 sm:mb-0 xsm:mb-4 h-10 p-2 w-64 input-name"
 						placeholder="Name"
 						name="name"
 						type="text"
@@ -55,7 +55,7 @@ export default function Contact() {
 						onChange={(e) => setName(e.target.value)}
 					/>
 					<input
-						className="h-8 w-64 p-2"
+						className="h-10 p-2 w-64 input-email"
 						placeholder="Email"
 						name="email"
 						type="email"
@@ -64,30 +64,28 @@ export default function Contact() {
 					/>
 				</div>
 				{emailErrorMessage && (
-					<div
-						className="text-red-500 font-bold mt-1"
-						style={{ marginLeft: '325px' }}>
+					<div className="text-red-500 font-bold mt-1">
 						<p>{emailErrorMessage}</p>
 					</div>
 				)}
 
-				<div className="ml-8 mr-8 mt-6">
+				<div className="mt-6">
 					<textarea
-						className="h-32 w-full"
+						className="h-32 lg:w-full md:w-full sm:w-full  xsm:w-64 textarea-message "
 						placeholder="Message"
 						value={message}
 						onChange={(e) => setMessage(e.target.value)}
 					/>
 				</div>
 				{errorMessage && (
-					<div className="text-red-500 font-bold ml-8">
+					<div className="text-red-500 font-bold">
 						<p>{errorMessage}</p>
 					</div>
 				)}
 
 				<div className="flex justify-center mb-8 mt-4">
 					<button
-						className="bg-blue-400 text-white font-bold rounded-xl p-2"
+						className="bg-blue-400 text-white font-bold rounded-xl mt-6 p-2"
 						onClick={handleFormSubmit}>
 						Send Message
 					</button>

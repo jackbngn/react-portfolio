@@ -3,18 +3,20 @@ import './styles/Nav.css';
 
 export default function NavTabs({ currentPage, handlePage }) {
 	const [isOpen, setIsOpen] = useState(false);
+	const [burgerLine, setBurgerLine] = useState('burger-bar unclicked');
+
 	const BurgerMenu = () => {
 		const toggleMenu = () => {
 			setIsOpen(!isOpen);
 		};
 
+		const burgerLineClass = isOpen ? 'burger-line open' : 'burger-line closed';
+
 		return (
-			<div
-				className={`burger_menu ${isOpen ? 'open' : ''}`}
-				onClick={toggleMenu}>
-				<div className="burger-line"></div>
-				<div className="burger-line"></div>
-				<div className="burger-line"></div>
+			<div className="burger_menu" onClick={toggleMenu}>
+				<div className={burgerLineClass}></div>
+				<div className={burgerLineClass}></div>
+				<div className={burgerLineClass}></div>
 			</div>
 		);
 	};
@@ -29,9 +31,9 @@ export default function NavTabs({ currentPage, handlePage }) {
 			</p>
 
 			<ul
-				className={`flex flex-wrap justify-end text-3xl space-x-12 py-8  nav-link ${
+				className={`flex flex-wrap  justify-end text-3xl space-x-12 py-8  nav-link ${
 					isOpen ? 'open' : ''
-				} ${isOpen && 'space-x-0'}`}>
+				} ${isOpen && 'space-x-2'}`}>
 				<li>
 					<button
 						onClick={() => handleNavigation('About')}

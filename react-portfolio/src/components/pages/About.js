@@ -15,7 +15,7 @@ export default function About({ handlePage }) {
 					<img
 						src={images}
 						alt="Profile"
-						className="w-80 h-80 overflow-hidden rounded-full"
+						className="lg:w-80 lg:h-80 overflow-hidden rounded-full"
 					/>
 				</div>
 			</div>

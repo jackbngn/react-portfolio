@@ -24,27 +24,29 @@ p.nav-name {
 	height: 20px;
 	cursor: pointer;
 	margin-right: 15px;
+	z-index: 10;
 }
 
 .burger-line {
 	width: 100%;
 	height: 3px;
 	background-color: #fff;
-	transition: all 0.3s ease;
+	transition: all 0.7s ease;
 }
-
-.open .burger-line:first-child {
+.burger-line.open:first-child {
 	transform: translateY(8px) rotate(45deg);
 }
 
-.open .burger-line:nth-child(2) {
+.burger-line.open:nth-child(2) {
 	opacity: 0;
 }
-
-.open .burger-line:last-child {
+.burger-line.open:last-child {
 	transform: translateY(-8px) rotate(-45deg);
 }
-
+.burger-bar.closed {
+	transform: rotate(0) translate(0);
+	transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
 @media screen and (max-width: 1686px) {
 	ul.nav-link {
 		margin-left: 7em;
@@ -76,52 +78,25 @@ p.nav-name {
 
 	ul.nav-link {
 		position: absolute;
-		right: -40px;
+		right: 0px;
 		height: 96vh;
-		top: 2.7vh;
+		top: 50px;
 		background-color: rgb(31 41 55);
-		display: flex;
+		align-items: center;
 		justify-content: space-around;
 		flex-direction: column;
-		align-items: center;
-		width: 50%;
-		transform: translateX(100%);
+		width: calc(50% + 1px);
 		opacity: 0;
+		padding-right: 1px;
+		transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
 	}
 
 	ul.nav-link.open {
+		width: 50%;
 		opacity: 1;
-		transform: translateX(0%);
-	}
-
-	ul.nav-link li {
-		transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-		opacity: 0;
-		transform: translateX(-10px);
-	}
-
-	ul.nav-link.open li {
-		opacity: 1;
-		transform: translateX(0);
-	}
-
-	ul.nav-link.open li:nth-child(1) {
-		transition-delay: 0.3s;
-	}
-
-	ul.nav-link.open li:nth-child(2) {
-		transition-delay: 0.4s;
-	}
-
-	ul.nav-link.open li:nth-child(3) {
-		transition-delay: 0.5s;
-	}
-
-	ul.nav-link.open li:nth-child(4) {
-		transition-delay: 0.6s;
 	}
 
 	.burger_menu div {
-		display: block;
+		display: inherit;
 	}
 }

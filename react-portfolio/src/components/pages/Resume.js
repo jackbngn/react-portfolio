@@ -4,7 +4,7 @@ function Resume() {
 	return (
 		<div className="max-w-3xl mx-auto p-4">
 			<div className="flex justify-center font-bold text-5xl m-6">
-				<h1>Resume</h1>
+				<h1 className="text-pink-color">Resume</h1>
 			</div>
 
 			<div className="flex justify-center m-8">
@@ -126,9 +126,11 @@ function Resume() {
 			<h2 className="text-xl font-bold mb-2">Additional Information:</h2>
 			<ul className="list-disc ml-6 mb-4">
 				<li>
-					GitHub:{' '}
-					<a href="https//github.com/jackbngn/" className="text-blue-500">
-						[GitHub profile URL]
+					<a
+						href="https://github.com/jackbngn/"
+						target="_blank"
+						className="text-blue-500">
+						GitHub
 					</a>
 				</li>
 			</ul>

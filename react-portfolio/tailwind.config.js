@@ -8,6 +8,9 @@ module.exports = {
 				'pink-color': '#ff90b3',
 				'custom-blue': '#0d223e',
 			},
+			screens: {
+				xsm: '390px',
+			},
 		},
 	},
 	variants: {
